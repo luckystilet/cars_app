@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+input, textarea, button {
+    outline: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.detailed-car-image{
+    height: 200px;
+}
+.pointer{
+    cursor: pointer;
+}
+.btn-show-hide-phone{
+    width: 120px;
+}
+.phone-block{
+    height: 36px;
+}
+.modal{
+    display: block;
+}
+.phone-enter-active, .phone-leave-active{
+    transition: all .3s linear;
+}
+.phone-enter, .phone-leave-to{
+    transform: translateX(150px);
+    opacity: 0;
+}
+.modal-enter-active, .modal-leave-active{
+    transition: all .4s linear;
+}
+.modal-enter, .modal-leave-to{
+    transform: translateY(-250px) rotateZ(600deg) scale(0);
+    opacity: .4;
+}
+
+.fade-enter-active{
+    animation: .3s fade forwards;
+}
+.fade-leave-active{
+    animation: .3s fade reverse;
+}
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .5;
+    }
+}
